@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Tammudu 2', cursive;
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.slider {
+  border-radius: 15px;
+  height: 80vh;
+
+  margin: 10px;
+  flex: 1;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: relative;
+
+  transition: all .5s ease-out;
+}
+
+.slider h3 {
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0;
+}
+
+.slider.active {
+  flex: 10;
+}
+
+.slider.active h3 {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
